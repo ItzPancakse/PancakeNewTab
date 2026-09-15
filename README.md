@@ -2,6 +2,8 @@
 
 **An another new tab :3**
 
+**Test it [here!](https://pancake-new-tab.vercel.app/)**
+
 ## Features
 
 - Uses DuckDuckGo search (i like privacy)
