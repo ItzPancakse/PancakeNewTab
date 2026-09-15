@@ -1,8 +1,13 @@
+<div align="center">
+
 # PancakeNewTab
 
 **An another new tab :3**
 
+<img src="image.png" alt="Preview" width="512">
+
 **Test it [here!](https://pancake-new-tab.vercel.app/)**
+</div>
 
 ## Features
 
