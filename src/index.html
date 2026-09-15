@@ -1,15 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pancake New Tab</title>
-    <link rel="stylesheet" href="./style.css" />
-    <h1>Welcome to Pancake New Tab</h1>
-    <p>Well more is coming soon sooooo yea.</p>
-  </head>
-  <body>
-    <div id="app"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Pancake New Tab</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/svg+xml" href="./favicon.svg?v=2" />
+    </head>
+<body>
+    <div id="logo">🥞 pancake new tab :3</div>
+    <div id="tagline">fluffy, warm, syrupy and canadian :3</div>
+
+    <form id="search-form" action="https://duckduckgo.com/" method="get">
+        <input id="search-input" name="q" type="text" placeholder="search duckduckgo... (e.g. how to get a girlfriend)" autocomplete="off" autofocus />
+        <button id="search-button" type="submit">go :3</button>
+    </form>
+
+    <div id="grid">
+
+        <div class="card" id="news-card">
+            <h2>🌍 da news :3</h2>
+            <div id="topic-tabs"></div>
+            <div id="news-status">loading da headlines...</div>
+            <ul id="news-list"></ul>
+        </div>
+        
+        <div class="card" id="shortcuts-card">
+            <h2>🔗 da shortcuts :3</h2>
+            <div id="shortcut-grid"></div>
+            <div id="add-shortcut-form">
+                <input id="shortcut-name-input" type="text" placeholder="name (optional)" autocomplete="off" />
+                <input id="shortcut-url-input" type="text" placeholder="url (e.g. https://pancakse.dev)" autocomplete="off" />
+                <div id="add-shortcut-button">
+                    <button id="add-shortcut-save" type="button">add</button>
+                    <button id="add-shortcut-cancel" type="button">cancel</button>  
+                </div>
+            </div>
+        </div>
+
+        <div class="card" id="weather-card">
+            <h2>🌤️ da weather :3</h2>
+            <div id="weather-body">
+                <div id="weather-permission">
+                    <strong>da weather needs your permission to be shown</strong>
+                    <span>it shows your where your city is approximately</span>
+                    <button id="weather-permission-button" type="button">show my weather</button>
+                </div>
+                <div id="weather-details" area-hidden="true">
+                    <div id="weather-emoji">⏳</div>
+                    <div id="weather-temp">--°</div>
+                    <div id="weather-place">loading...</div>
+                    <div id="weather-feels-like"></div>
+                    <div id="weather-detail-row">
+                        <span id="weather-humidity"></span>
+                        <span id="weather-wind"></span>
+                    </div>
+                    <div id="weather-high-low"></div>
+                </div>
+                <div id="weather-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <a id="settings-link" href="/settings/" title="settings">⚙</a>
+
+    <div id="footer">made with 🥞 and ❤️ by pancakse</div>
     <script type="module" src="./main.js"></script>
-  </body>
+</body>
 </html>

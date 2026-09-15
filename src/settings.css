@@ -1,0 +1,129 @@
+.settings-body {
+  align-items: center;
+}
+
+#back-link {
+  align-self: flex-start;
+  margin-left: max(20px, calc((100vw - 1100px) / 2));
+  color: var(--subtext);
+  text-decoration: none;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+#back-link:hover {
+  color: var(--peach);
+}
+
+.settings-card {
+  width: min(560px, 90vw);
+  margin-bottom: 20px;
+}
+
+.settings-card h2 {
+  margin-bottom: 14px;
+}
+
+.radio-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.radio-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.radio-row input {
+  accent-color: var(--peach);
+  width: 16px;
+  height: 16px;
+}
+
+#default-topic-select {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  background: var(--surface0);
+  border: 2px solid var(--surface1);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+#search-engine-select {
+  width: 100%;
+  padding: 10px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  background: var(--surface0);
+  border: 2px solid var(--surface1);
+  border-radius: 8px;
+  color: var(--text);
+}
+
+#settings-shortcut-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+#settings-shortcut-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background: var(--surface0);
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+#settings-shortcut-list li button {
+  background: none;
+  border: none;
+  color: var(--subtext);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#settings-shortcut-list li button:hover {
+  color: var(--maroon);
+}
+
+#settings-empty {
+  color: var(--subtext); 
+  font-size: 13px; 
+}
+
+#clear-shortcuts-button {
+  padding: 8px 14px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: 2px solid var(--maroon);
+  background: transparent;
+  color: var(--maroon);
+  cursor: pointer;
+}
+#clear-shortcuts-button:hover { background: var(--maroon); color: var(--crust); }
+ 
+#saved-indicator {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 8px 16px;
+  background: var(--peach);
+  color: var(--crust);
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+#saved-indicator.show { opacity: 1; }

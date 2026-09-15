@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>pancake new tab | settings</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../settings.css" />
+        <link rel="icon" type="image/svg+xml" href="../favicon.svg?v=2" />
+    </head>
+    <body class="settings-body">
+
+        <a id="back-link" href="/">← back to home :3</a>
+
+        <section class="card settings-card">
+            <h2>🌡️ temperature unit</h2>
+            <div class="radio-row">
+                <label><input type="radio" name="tempUnit" value="auto" /> automatic :33</label>
+                <label><input type="radio" name="tempUnit" value="celsius" /> celsius</label>
+                <label><input type="radio" name="tempUnit" value="fahrenheit" /> fahrenheit</label>
+                <label><input type="radio" name="tempUnit" value="kelvin" /> kelvin :3</label>
+            </div>
+        </section>
+
+        <section class="card settings-card">
+            <h2>💨 wind speed</h2>
+            <div class="radio-row">
+                <label><input type="radio" name="windUnit" value="auto" /> automatic</label>
+                <label><input type="radio" name="windUnit" value="kmh" /> km/h</label>
+                <label><input type="radio" name="windUnit" value="mph" /> mph</label>
+            </div>
+        </section>
+
+        <section class="card settings-card">
+            <h2>🔎 search engine</h2>
+            <select id="search-engine-select" aria-label="search engine"></select>
+        </section>
+
+        <section class="card settings-card">
+            <h2>🔗 shortcuts</h2>
+            <ul id="settings-shortcut-list"></ul>
+            <button id="clear-shortcuts-button" type="button">clear shortcuts</button>
+        </section>
+
+        <div id="saved-indicator">saved :3</div>
+        <script type="module" src="../settings.js"></script>
+
+    </body>
+</html>
